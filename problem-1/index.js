@@ -92,7 +92,7 @@ app.get("/numbers", timeout("5s"), async (req, res) => {
     });
     console.log(data);
 
-    res.status(200).send({ numbers: "numbers" });
+    res.status(200).send({ numbers: data });
 });
 
 app.listen(5000, () => {
